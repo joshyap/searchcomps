@@ -13,7 +13,7 @@ let searchTerm = 'james harden';
     const page = await browser.newPage();
     await page.setViewport({ width: 1920, height: 1080 });
     await page.goto(`${google}${searchTerm}`);
-    await page.screenshot({ path: 'google.png', fullPage: true });
+    await page.screenshot({ path: './src/google.png', fullPage: true });
 
     await browser.close();
 })();
@@ -23,7 +23,7 @@ let searchTerm = 'james harden';
     const page = await browser.newPage();
     await page.setViewport({ width: 1920, height: 1080 });
     await page.goto(`${bing}${searchTerm}`);
-    await page.screenshot({ path: 'bing.png', fullPage: true });
+    await page.screenshot({ path: './src/bing.png', fullPage: true });
   
     await browser.close();
 })();
@@ -33,7 +33,7 @@ let searchTerm = 'james harden';
     const page = await browser.newPage();
     await page.setViewport({ width: 1920, height: 1080 });
     await page.goto(`${duck}${searchTerm}`);
-    await page.screenshot({ path: 'duck.png', fullPage: true });
+    await page.screenshot({ path: './src/duck.png', fullPage: true });
   
     await browser.close();
 })();
@@ -43,4 +43,4 @@ let searchTerm = 'james harden';
 //     res.send("node project set up");
 // });
 
-// app.listen(port, () => console.log(`Application listening on port ${port}!`))
+app.listen(port, () => console.log(`Application listening on port ${port}!`))
